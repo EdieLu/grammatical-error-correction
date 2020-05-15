@@ -272,8 +272,6 @@ class Trainer(object):
 
 		# Get loss
 		loss.reset()
-		att_loss.reset()
-		dsfclassify_loss.reset()
 		# import pdb; pdb.set_trace()
 
 		logps = torch.stack(decoder_outputs, dim=1).to(device=device)
@@ -296,8 +294,8 @@ class Trainer(object):
 		att_resloss = 0
 		dsfclassify_resloss = 0
 
-		self.optimizer.step()
 		loss.backward()
+		self.optimizer.step()
 
 		return resloss, att_resloss, dsfclassify_resloss
 

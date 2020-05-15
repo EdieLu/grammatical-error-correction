@@ -26,8 +26,8 @@ path_vocab=lib/vocab/clctotal+swbd.min-count4.en
 load_embedding=lib/embeddings/glove.6B.200d.txt
 
 # ------------------------ TRAIN --------------------------
-checkpoint_every=5000
-print_every=1000
+checkpoint_every=5
+print_every=1
 batch_size=256
 max_seq_len=32
 num_epochs=20
