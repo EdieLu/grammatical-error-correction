@@ -1,0 +1,13 @@
+Note
+
+standard NMT structure
+3 points better than tf implementaiton
+use /encdec/run-v6 to run
+
+changes:
+1. not using loss mask for <pad> - do penalise <pad> words
+2. bilstm using pt internal function
+3. per batch shuffling of data
+
+
+
