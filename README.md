@@ -2,7 +2,7 @@
 
 Standard encoder-decoder NMT 
 
-## Libraries
+## Requirements
 
 python 3.6
 

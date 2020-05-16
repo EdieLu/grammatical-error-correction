@@ -226,7 +226,7 @@ class Seq2Seq(nn.Module):
 
 	def forward(self, src, tgt=None,
 		hidden=None, is_training=False, teacher_forcing_ratio=1.0,
-		att_key_feats=None, beam_width=0):
+		att_key_feats=None, beam_width=1):
 
 		"""
 			Args:
